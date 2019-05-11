@@ -21,15 +21,22 @@ export default class Sidebar {
     this._container.className = "sidebar";
 
     // Navigation Buttons
+    
+    //creating a new button in the webpage with the same image as the HomeButton
+    const p3Button = new IconButton("home");
+    
     const homeButton = new IconButton("home");
     const analyticsButton = new IconButton("chart-line");
     const reportsButton = new IconButton("file-alt");
     const settingsButton = new IconButton("cog");
-
+ 
+    this._container.appendChild(p3Button.getElement()); 
     this._container.appendChild(homeButton.getElement());
     this._container.appendChild(analyticsButton.getElement());
     this._container.appendChild(reportsButton.getElement());
     this._container.appendChild(settingsButton.getElement());
+    
+       
 
     return this._container;
   }

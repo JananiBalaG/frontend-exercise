@@ -18,6 +18,8 @@ export default class PieChartCard {
       { title: "Email", value: 24, color: "#7796CB" },
       { title: "Social Media", value: 28, color: "#576490" }
     ];
+    
+    
   }
 
   /**
@@ -34,6 +36,7 @@ export default class PieChartCard {
     const width = 500;
 
     const pieChartLegend = new ChartLegend(this._data);
+    
     const pieChart = new PieChart(height, this._data);
     const chartContainer = new ChartContianer(
       height,

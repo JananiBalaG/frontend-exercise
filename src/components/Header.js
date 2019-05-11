@@ -20,7 +20,15 @@ export default class Header {
     this._container.className = "header";
 
     const logoContainer = document.createElement("div");
+    //creating an onclick event on the duck image in the page to open a google page with duck images.
+      logoContainer.addEventListener("click", function() 
+    {
+      //the click event will open a page with images of ducks.
+      window.open('https://www.google.com/search?q=ducks&rlz=1C1AVNE_enIN692IN692&source=lnms&tbm=isch&sa=X&ved=0ahUKEwivgeLcrJLiAhVDKKwKHQEvAToQ_AUIDigB&biw=1242&bih=568');
+    }    
+    );
     logoContainer.className = "logo-container";
+    
 
     const title = document.createElement("h1");
     title.innerText = "Chuck's Ducks";

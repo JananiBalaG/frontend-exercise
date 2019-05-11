@@ -10,11 +10,11 @@
 }
 
 .percentage-card:last-child {
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 
 .percentage-card > div {
-  margin-bottom: 15px;
+  margin-bottom: 0px;
 }
 
 .percentage-card > div:last-child {
